@@ -1,0 +1,24 @@
+{
+  "name": "@toogood/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "with-env": "dotenv -e ../../.env --",
+    "dev": "pnpm with-env prisma studio --port 5556",
+    "db-push": "pnpm with-env prisma db push",
+    "db-generate": "pnpm with-env prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.7.1"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^6.0.0",
+    "prisma": "^4.7.1",
+    "typescript": "^4.9.3"
+  }
+}
